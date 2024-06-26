@@ -47,7 +47,6 @@
 
 .top-bar i {
     color: #666666;
-
 }
 
 .sitebar {
@@ -136,6 +135,8 @@
     display: inline-flex;
     margin-right: 30%;
     border: none;
+    margin-bottom: 100px;
+
 }
 
 input::placeholder {
@@ -153,6 +154,7 @@ input::placeholder {
     padding: 15px;
     margin-left: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    /* margin-bottom: -30px; */
 }
 
 .search-button a {
@@ -177,6 +179,7 @@ input::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-stretch: expanded;
+    /* margin-top: 90px; */
 
 }
 
@@ -184,6 +187,7 @@ input::placeholder {
     width: 100%;
     transition: 1s;
     margin-bottom: 15px;
+
 }
 
 .element img:hover {
@@ -216,7 +220,7 @@ input::placeholder {
 
 .service-section {
     background-color: rgb(238, 238, 238);
-    height: 130%;
+    /* height: 130%; */
     display: block;
     margin: auto;
 
@@ -325,7 +329,6 @@ input::placeholder {
 
 .about-center {
     background-color: rgb(238, 238, 238);
-    height: 150%;
     display: block;
     margin: auto;
 
@@ -356,7 +359,7 @@ input::placeholder {
 
 .staff {
     background-color: #ffffff;
-    height: 70%;
+    /* height: 70%; */
     display: block;
     margin: auto;
 
@@ -378,7 +381,7 @@ input::placeholder {
     font-size: large;
     text-align: center;
     display: inline-block;
-
+    margin-bottom: 50px;
 }
 
 .staff-container {
@@ -401,7 +404,7 @@ input::placeholder {
     margin: 15px;
     border-radius: 5px;
     display: inline-block;
-
+    margin-bottom: 50px;
 }
 
 .staff img {
@@ -425,7 +428,7 @@ input::placeholder {
 
 .staff-container p {
     color: rgb(164, 162, 162);
-    font-size: medium;
+    font-size: larger;
     text-align: center;
     margin: 25px;
 
@@ -445,7 +448,7 @@ input::placeholder {
 
 .pricing {
     background-color: rgb(238, 238, 238);
-    height: 90%;
+    /* height: 90%; */
     display: block;
     margin: auto;
 
@@ -547,7 +550,7 @@ input::placeholder {
 
 .question {
     background-color: #ffffff;
-    height: 50%;
+    /* height: 50%; */
     display: block;
     margin: auto;
     padding: 60px;
@@ -613,7 +616,7 @@ input::placeholder {
 
 .why-us {
     background-color: #ffffff;
-    height: 60%;
+    /* height: 60%; */
     display: flex;
     margin: auto;
     padding: 60px;
@@ -682,7 +685,7 @@ input::placeholder {
 
 .client {
     background-color: rgb(238, 238, 238);
-    height: 80%;
+    /* height: 80%; */
     display: block;
     margin: auto;
 
@@ -736,7 +739,7 @@ input::placeholder {
 
 .artical {
     background-color: #ffffff;
-    height: 50%;
+    /* height: 50%; */
     display: block;
     margin: auto;
 }
@@ -749,7 +752,7 @@ input::placeholder {
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
-
+    margin-top: 315px;
 
 }
 
@@ -808,7 +811,7 @@ input::placeholder {
 
 .contact {
     background-color: rgb(238, 238, 238);
-    height: 80%;
+    /* height: 80%; */
     display: block;
     margin: auto;
 
@@ -881,7 +884,7 @@ input::placeholder {
 .contact-right {
     display: inline-block;
     position: absolute;
-    height: 40%;
+    /* height: 40%; */
     width: 18%;
     background-color: #ffffff;
     padding: 40px;
@@ -1054,7 +1057,7 @@ input::placeholder {
 
 .copy-right {
     border-top: 2px solid rgb(160, 158, 158);
-    color: #ffffff;
+    color: #574f4f;
     text-align: center;
     font-size: large;
     padding: 50px;
@@ -1063,8 +1066,46 @@ input::placeholder {
 .copy-right i {
     color: red;
 }
-/* For screens smaller than 768px */
+
 @media screen and (max-width: 768px) {
+
+    /* For screens smaller than 768px */
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .image {
+        padding: 30px 20px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+    }
+
+    .searchbar input,
+    .search-button {
+        /* width: 100%; */
+        margin-bottom: 10px;
+    }
+
+    .why-us {
+        flex-direction: column;
+    }
+
+    .why-us .left-section-why,
+    .why-us .right-section-why {
+        width: 100%;
+    }
+
     .top-left {
         width: 100%;
     }
@@ -1084,55 +1125,93 @@ input::placeholder {
         justify-content: center;
     }
 
-    .sitebar-right-sec {
-        text-align: center;
-    }
-
-    .sitebar-right-sec li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .sitebar-right-sec a {
-        display: inline-block;
-    }
-
     .sitebar-menu {
         display: flex;
         justify-content: space-between;
     }
 
-    .div-container div {
-        width: calc(50% - 30px);
+    /* 
+    .div-container div,
+    .staff-container div,
+    .pricing-container {
+        /* width: calc(50% - 30px);
+         */
+    /* width: 100%; */
+    /* }  */
+
+    .div-container,
+    .artical-section {
+        padding: 20px;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
 
-    .div-container {
-        padding: 20px;
+    .contact-detail {
+        flex-direction: column;
+        width: 100%;
     }
 
     .div-container div,
-    .div-container {
-        margin: 10px;
+    .div-container,
+    .staff-container div,
+    .pricing-container {
+        margin: 30px;
+        width: 70%;
     }
 
-    .left-side-artical,
-    .right-side-artical {
+    .client-container div {
+        margin-bottom: 200px;
+        width: 70%;
+
+    }
+
+    .client-container div img {
+        width: 30%;
+
+    }
+
+    .link-container div {
+        margin: 30px;
         width: 100%;
-        margin: 0;
+    }
+    .left-side-artical,
+    .right-side-artical{
+        width: 100%;
+        margin: 30px;
     }
 
-    .left-side-artical img,
-    .right-side-artical img {
-        margin: 0;
+   .left-side-artical img,
+    .right-side-artical img{
+        width: 20%;
+        margin: 30px;
+        height: 180px;
+    }
+
+    .staff-container,
+    .link-container div {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+
+    }
+
+    .question-container div {
+        width: 100%;
+        background-color: white;
+
     }
 }
 
 /* For screens smaller than 1024px */
 @media screen and (max-width: 1024px) {
-    .sitebar-right-sec,
-    .pricing-container,
+
+    /* .pricing-container, */
     .footer-element {
-        display: none;
+        /* display: none; */
+        width: calc(33.333% - 30px);
+
     }
 
     .sitebar-menu {
@@ -1143,26 +1222,65 @@ input::placeholder {
         width: 100%;
     }
 
+    /* 
     .div-container div {
         width: calc(33.333% - 30px);
-    }
+    } */
 }
 
 /* For screens larger than 1024px */
 @media screen and (min-width: 1024px) {
-    .sitebar-menu {
-        display: none;
-    }
-
-    .sitebar-right-sec {
-        display: block;
-    }
+    /* 
 
     .pricing-container {
         display: flex;
-    }
+    } */
 
     .footer-element {
         display: flex;
     }
 }
+
+@media (max-width: 1200px) {
+    .sitebar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sitebar-right-sec ul {
+        flex-direction: column;
+        gap: 10px;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    .image h1 {
+        font-size: 24px;
+    }
+
+    .link {
+        padding: 20px 10px;
+    }
+
+    .service-section,
+    .about,
+    .staff,
+    .pricing,
+    .question,
+    .why-us,
+    .client,
+    .artical,
+    .contact,
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+

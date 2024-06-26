@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const staffMembers = [
         {
-            name: 'Max Carlson',
-            position: 'Co-founder',
+            name: 'MAX CARLSON',
+            position: 'CO-FOUNDER',
             image: 'person_1.jpg.webp',
             socialMedia: {
                 facebook: '#',
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         {
-            name: 'Charlotte Pilat',
-            position: 'Co-founder',
+            name: 'CHARLOTTE PILAT',
+            position: 'CO-FOUNDER',
             image: 'person_2.jpg.webp',
             socialMedia: {
                 facebook: '#',
@@ -50,8 +50,38 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'NICOLE LEWIS',
-            position: 'Co-founder',
+            position: 'CO-FOUNDER',
             image: 'person_3.jpg.webp',
+            socialMedia: {
+                facebook: '#',
+                twitter: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'JEAN SMITH',
+            position: 'FINANCIAL MANAGER',
+            image: 'person_2.jpg.webp',
+            socialMedia: {
+                facebook: '#',
+                twitter: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name:'BOB CARRY',
+            position: 'LOADER MANAGER',
+            image: 'person_1.jpg.webp',
+            socialMedia: {
+                facebook: '#',
+                twitter: '#',
+                instagram: '#'
+            }
+        },
+        {
+            name: 'ANNE FISHER',
+            position: 'PACKAGE MANAGER',
+            image: 'person_2.jpg.webp',
             socialMedia: {
                 facebook: '#',
                 twitter: '#',
